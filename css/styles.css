@@ -11,122 +11,99 @@ header{
     height: 50px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center; 
-    background-image: linear-gradient(to right, aquamarine, blue);
+    /* justify-content: space-between; */
+    /* align-items: center;  */
+    background-image: linear-gradient(to right, aquamarine , rgb(125, 6, 161));
     padding: 10px;
 }
 header nav ul{ 
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    /* justify-content: flex-start; */
 }
 header h1{
     text-align: left;
-    align-items: center;
+    line-height: 80%;
+    font-size: 35px;
+}
+.home{
+    text-align: left;
+    line-height: 80%;
+    font-size: 35px; 
+    text-decoration: none; 
+    list-style-type: none;
+    color: black;
 }
 nav ul li{
     text-decoration: none;
     list-style-type: none;
-    margin-left: 1rem;  
+    margin-left: 1rem;
+     
 }
 nav a{
     text-decoration: none;
-    color: white;
+    color: rgb(10, 3, 26);
     text-transform: capitalize;
+    vertical-align: bottom; 
+    font-weight: bold;
 }
+nav a:hover{
+    color: aqua;
+}
+
 main{
     font-family: 'Montserrat', sans-serif;
 }
-.imgdoshas{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 0.5fr 0.2fr
+.doshas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 5px;
 }
-/*section div h3{
-    text-align: center;
-    font-size: 30px;
-    letter-spacing: 3px;
-    text-transform: uppercase; 
-}*/
-.btn{
-    text-transform: uppercase;
+.item{
+    width: 320px;
+    height: 500px;  
+    filter: drop-shadow(0 5px 5px aquamarine); 
 }
 section div img{
-    background-color: aquamarine;
-    background-size: cover;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 300ms;
+    position: relative;
+}
+section div img:hover{
+    transform: scale(1.05);
 }
 
+.carousel-item{
+    background-color: rgb(106, 119, 119);
+}
+.w-100{
+    height: 500px;
+    background-position: center;
+    object-fit: scale-down;
+}
+.carousel-caption{
+    position: initial;
+}
 
-/*.terapias{
-    background-image: url(imagenes/terapia.jpg);
-    background-position: left;
-    background-size: 200px 300px;
-    background-repeat: no-repeat;
-    margin-left: 50px;
-}*/
-.terapias{
-    font-family: 'Montserrat', sans-serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: 
-        "h2 h2"
-        "img ul"
-        "img ul";
-}
-.terapias h2{
-    width: 600px;
-    padding-left: 60px;
-    margin-left: 350px;
-}
-.terapias ul{
-    width: 600px;
-    padding-left: 60px;
-    margin-left: 350px;
-}
-.infogral{
-    background-color: lawngreen;
-    width: 200px;
-    background-image: url(imagenes/general.jpg);
-    background-position: left;
-    background-repeat: no-repeat;
-    margin-left: 50px;
-}
-.infogral h2{
-    width: 600px;
-    padding-left: 60px;
-    margin-left: 350px;
-}
-.infogral h3{
-    width: 600px;
-    padding-left: 60px;
-    margin-left: 350px;
-}
-.infogral p{
-    width: 600px;
-    padding-left: 60px;
-    margin-left: 350px;
-}
 footer{
     font-family: 'Montserrat', sans-serif;
     background-color: aquamarine;
+}
+.footer{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    grid-template-rows: 1fr;
 }
 footer a{
     text-decoration: none;
     color: black;
 }
-footer h3{
-    margin-left: 500px;
-}
-footer p{
-    margin-left: 500px;
-}
-iframe{
-    margin-left: 500px;
-}
-footer ul{
-    margin-top: 50px;
+footer img{
+    height: 100px;
 }
 .contacto{
     font-family: 'Montserrat', sans-serif;
