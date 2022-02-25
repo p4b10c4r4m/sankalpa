@@ -66,14 +66,14 @@ main{
     height: 500px;  
     filter: drop-shadow(0 5px 5px aquamarine); 
 }
-section div img{
+.pict{
     width: 100%;
     height: 100%;
     object-fit: contain;
     transition: all 300ms;
     position: relative;
 }
-section div img:hover{
+.pict:hover{
     transform: scale(1.05);
 }
 
@@ -89,24 +89,27 @@ section div img:hover{
     position: initial;
 }
 
-footer{
-    font-family: 'Montserrat', sans-serif;
-    background-color: aquamarine;
-}
 .footer{
     display: grid;
-    grid-template-columns: 0.5fr 1fr;
+    grid-template-columns: 0.5fr 1fr 1fr;
     grid-template-rows: 1fr;
+    font-family: 'Montserrat', sans-serif;
+    background-color: aquamarine;
+    align-items: center;
 }
 footer a{
     text-decoration: none;
     color: black;
 }
 footer img{
-    height: 100px;
+    height: 50px;
 }
+
 .contacto{
     font-family: 'Montserrat', sans-serif;
     background-color: aquamarine;
     width: 100px;
 } 
+
+
+/*# sourceMappingURL=styles.css.map */
